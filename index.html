@@ -47,19 +47,62 @@
                         <div class="flex-child"></div>
                         <div class="flex-child"></div>
                     </div>
-                    <div class="flex-parent">
+                    <div class="flex-parent flex-parent-stacked">
                         <div class="flex-child"></div>
                         <div class="flex-child"></div>
                         <div class="flex-child"></div>
                     </div>
                 </div>
             </section>
-            <!-- -->
-            <section></section>
-            <!-- -->
-            <section></section>
-            <!-- -->
-            <section></section>
+            <!--Positioning -->
+            <section class="positioning-wrapper">
+                <div class="interior interior--positioning">
+                    <h1> Positioning Elements</h1>
+                    <div class="circle" style="right: 20px; top: 300px;"></div>
+                    <div class="circle" style="right: 50px; top: 100px;"></div>
+                    <div class="circle" style="right: 200px; top: 30px;"></div>
+                    <div class="square" style="right: 300px; top: 300px;"></div>
+                    <div class="square" style="right: 30px; top: 20px;"></div>
+                </div>
+            </section>
+            <!--Headers -->
+            <section>
+                <div class="interior">
+                    <h1> Highest level header (h1)</h1>
+                    <h2>Subsection of the header one (h2)</h2>
+                    <p>this is a paragraph</p>
+                    <h3>Header three is a subsection of header two(h3)</h3>
+                    <h4>This is a subsection of the third header (h4)</h4>
+                    <p>this is a paragraph</p>
+                    <p>this is a paragraph</p>
+                </div>
+            </section>
+            <!--Simple JavaScript -->
+            <section>
+                <div class="interior">
+                    <h1>Simple JavaScript</h1>
+                    <script>
+                        let count = 0; 
+
+                        function increaseCount(){
+                            count = count + 1; 
+                            const countIndicator = document.querySelector(".count-indicator"); 
+                            return (countIndicator.innerHTML = count); 
+                        }
+
+                        function decreaseCount(){
+                            count = count - 1; 
+                            const countIndicator = document.querySelector(".count-indicator"); 
+                            return (countIndicator.innerHTML = count); 
+                        }
+
+                    </script>
+                    <p>Count: <span class= "count-indicator">0</span></p>
+                    <button onClick="increaseCount()">Click to increase!</button>
+
+                    <button onClick="decreaseCount()">Click to increase!</button>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </body>
