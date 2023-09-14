@@ -21,11 +21,6 @@ const coolArrowFunction = () => 'hello';
 
 
 
-
-() => {
-
-}
-
 ## Objects
 
 const annoyingObject ={
